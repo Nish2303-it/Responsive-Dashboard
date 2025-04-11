@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Dashboard</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100">
+
+  <!-- Dashboard Layout -->
+  <div class="flex h-screen">
+
+    <!-- Sidebar -->
+    <div class="w-64 bg-blue-900 text-white p-4 space-y-6 flex-shrink-0">
+      <div class="text-2xl font-semibold">Dashboard</div>
+      <ul class="space-y-4">
+        <li><a href="#" class="hover:text-blue-300">Home</a></li>
+        <li><a href="#" class="hover:text-blue-300">Analytics</a></li>
+        <li><a href="#" class="hover:text-blue-300">Projects</a></li>
+        <li><a href="#" class="hover:text-blue-300">Messages</a></li>
+        <li><a href="#" class="hover:text-blue-300">Settings</a></li>
+      </ul>
+    </div>
+
+    <!-- Main Content Area -->
+    <div class="flex-1 flex flex-col">
+
+      <!-- Top Navbar -->
+      <div class="bg-white shadow-md p-4 flex items-center justify-between">
+        <div class="text-xl font-semibold">Welcome back, Avanish </div>
+        <div class="flex space-x-4">
+          <button class="text-gray-700 hover:text-blue-500">Profile</button>
+          <button class="text-gray-700 hover:text-blue-500">Logout</button>
+        </div>
+      </div>
+
+      <!-- Content Area -->
+      <div class="p-6 flex-1 space-y-6">
+
+        <!-- Row of Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="bg-white shadow-lg rounded-lg p-6">
+            <h3 class="text-lg font-semibold">Total Sales</h3>
+            <p class="text-2xl">1,500</p>
+          </div>
+
+          <div class="bg-white shadow-lg rounded-lg p-6">
+            <h3 class="text-lg font-semibold">New Users</h3>
+            <p class="text-2xl">450</p>
+          </div>
+
+          <div class="bg-white shadow-lg rounded-lg p-6">
+            <h3 class="text-lg font-semibold">Total Revenue</h3>
+            <p class="text-2xl">$25,500</p>
+          </div>
+        </div>
+
+        <!-- Recent Activity Section -->
+        <div class="bg-white shadow-lg rounded-lg p-6">
+          <h3 class="text-xl font-semibold mb-4">Recent Activity</h3>
+          <ul class="space-y-4">
+            <li class="flex justify-between">
+              <span>User X registered</span>
+              <span class="text-gray-500 text-sm">2 mins ago</span>
+            </li>
+            <li class="flex justify-between">
+              <span>Project Y completed</span>
+              <span class="text-gray-500 text-sm">6 hour ago</span>
+            </li>
+            <li class="flex justify-between">
+              <span>New comment on Task Z</span>
+              <span class="text-gray-500 text-sm">24 hours ago</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
